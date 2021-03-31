@@ -21,7 +21,24 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         emaillbl.text = email
         passwordlbl.text = password
+        print("View 2 Did Load");
        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("View 2 Will Appear");
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("View 2 Did Appear");
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("View 2 Will Disappear");
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("View 2 Did Disappear");
     }
     
 
